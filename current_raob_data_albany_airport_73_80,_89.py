@@ -11,7 +11,6 @@ This code takes the most current sounding from the NOAA's webstite from the alba
 
 ### Import packages used:
 """
-pip install -r requirements.txt
 # standard inputs
 import pandas as pd
 import matplotlib.pyplot as plt
