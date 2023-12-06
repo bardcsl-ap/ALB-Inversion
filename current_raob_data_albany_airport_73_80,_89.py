@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Current RAOB data Albany Airport -73.80,   89.ipynb
+"""Current RAOB data Albany Airport -73.80, 89
 
-### Import packages used:
+This code takes the most current sounding from the NOAA's webstite from the albany airport station and places all of the data into a dataframe.
 """
+### Import packages used:
+
 # standard inputs
 import streamlit as st
 import pandas as pd
