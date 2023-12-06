@@ -1,6 +1,5 @@
 streamlit
 numpy
-matplotlib
-matplotlib.pyplot
+matplotlib==3.8
 pandas
 BeautifulSoup
