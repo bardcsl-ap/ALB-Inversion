@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Current RAOB data Albany Airport -73.80, 89
 
-This code takes the most current sounding from the NOAA's webstite from the albany airport station and places all of the data into a dataframe.
-"""
 ### Import packages used:
 
 # standard inputs
@@ -15,7 +12,10 @@ from bs4 import BeautifulSoup
 import requests
 # this import is to make the graph look nicer
 import matplotlib.colors as mcolors
+"""Current RAOB data Albany Airport -73.80, 89
 
+This code takes the most current sounding from the NOAA's webstite from the albany airport station and places all of the data into a dataframe.
+"""
 """Information about how to format the url is at:  https://rucsoundings.noaa.gov/text_sounding_query_parameters.pdf
 
 The data format information is at: https://rucsoundings.noaa.gov/raob_format.html
