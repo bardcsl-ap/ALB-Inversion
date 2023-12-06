@@ -12,8 +12,10 @@ from bs4 import BeautifulSoup
 import requests
 # this import is to make the graph look nicer
 import matplotlib.colors as mcolors
-"""Current RAOB (Balloon Sonde) data from Albany Airport
+st.title('Current RAOB (Balloon Sonde) data from Albany Airport')
+st.title('plotted for :blue[Temperature Inversion] :cloud:')
 
+"""
 This code takes the most current sounding from the NOAA's webstite from the albany airport station and places all of the data into a dataframe. It then plots the data and checks for potential temperature inversion patterns.
 """
 """Information about how to format the url is at:  https://rucsoundings.noaa.gov/text_sounding_query_parameters.pdf
