@@ -113,14 +113,13 @@ for i in range(9):
     if flag == 1:
         plt.fill_betweenx([boxbottom, boxtop], tempmin-7, tempmax+7, color=colors(color_value), alpha=0.3)
         plt.text(xmid-30, ymid-900, 'Inversion', fontsize=12, color='red', ha='center', va='bottom')
-plt.show()
+
 
 flaglist
-
-df.plot(x='TEMP', y='HEIGHT', kind='line')
+fig, ax = plt.subplots()
+df.plot(x='TEMP', y='HEIGHT', kind='line', ax=ax)
 plt.ylim(0,8000)
 plt.grid()
-
+st.pyplot(fig)
 df
 
-st.pyplot(fig)
