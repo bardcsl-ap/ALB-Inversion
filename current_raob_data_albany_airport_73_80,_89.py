@@ -21,6 +21,12 @@ The codes for different sounding locations are at: https://rucsoundings.noaa.gov
 import requests
 url = 'https://rucsoundings.noaa.gov/get_soundings.cgi?start=latest&airport=72518&'
 page = requests.get(url)
+if page.status_code == 200:
+    # Parse the HTML content using BeautifulSoup
+    inputdata = BeautifulSoup(page.text, 'html.parser')
+    # Now 'inputdata' contains the parsed HTML content
+else:
+    print(f"Error: Failed to retrieve the page. Status code: {page.status_code}")
 soup = BeautifulSoup(page.content, 'html.parser')
 
 data = inputdata.string[408:]
