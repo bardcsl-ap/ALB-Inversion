@@ -4,8 +4,10 @@
 ### Import packages used:
 """
 # standard inputs
+import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 # these imports allow accessing data from websites
 from bs4 import BeautifulSoup
 import requests
@@ -121,3 +123,4 @@ plt.grid()
 
 df
 
+st.pyplot(fig)
